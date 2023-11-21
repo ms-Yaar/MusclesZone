@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @swapper %>
+
+<div>
+  <%= link_to "Edit this swapper", edit_swapper_path(@swapper) %> |
+  <%= link_to "Back to swappers", swappers_path %>
+
+  <%= button_to "Destroy this swapper", @swapper, method: :delete %>
+</div>

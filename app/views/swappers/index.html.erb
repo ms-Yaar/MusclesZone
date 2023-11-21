@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Swappers</h1>
+
+<div id="swappers">
+  <% @swappers.each do |swapper| %>
+    <%= render swapper %>
+    <p>
+      <%= link_to "Show this swapper", swapper %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New swapper", new_swapper_path %>
